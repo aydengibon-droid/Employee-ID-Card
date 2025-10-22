@@ -35,24 +35,38 @@ function App() {
         <h2 className="text-2xl text-cyan-700">{quotes[0].name}</h2>
         <h3 className="text-stone-400">{quotes[0].title}</h3>
       </div>
-      </div>
     </div>
 
     {/* Second Card */}
-    <div className="w-[800px] flex">
-    <div className="flex justify-between mb-4 rounded-r-full">
-    <div className="p-2 bg-blue-500 w-80 rounded-l-xl outline outline-blue-500">
+      <div className="w-[800px] flex">
+      <div className="flex justify-between mb-4 rounded-r-full">
+      <div className="p-2 bg-blue-500 w-80 rounded-l-xl outline outline-blue-500">
       <h1 className="text-4xl text-white p-5 w-100">{quotes[1].name}</h1>
       <h2 className="text-xl text-gray-400 pl-4">{quotes[1].title}</h2>
-    </div>
-    <div className="flex items-center justify-center rounded-r-full outline outline-gray-500">
+      </div>
+      <div className="flex items-center justify-center rounded-r-full outline outline-gray-500">
       <h1 className="text-stone-950 text-xl text-justify text-left pl-5">
         {quotes[1].bio}
       </h1>
+      </div>
+      </div>
+    </div>
+  
+    {/* Third Card */}
+    <div className="w-[600px]">
+    <div className="bg-rose-200 w-[200px] text-center p-4 outline-2 outline-red-400 rounded-b-lg">
+      <h1 className="text-lg text-white-100">
+        {quotes[2].bio}
+      </h1>
+    </div>
+    <div className="bg-red-500 w-[200px] text-center p-4 outline-2 outline-red-400 rounded-b-lg">
+      <h2 className="text-xl text-rose-700 text-justify">{quotes[2].name}</h2>
+      <h3 className="text-rose-400 text-xl test-justify">{quotes[2].title}</h3>
     </div>
     </div>
-    </div>
-    
+  </div>
+
+
     </>
   )
 }
