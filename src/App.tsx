@@ -38,6 +38,20 @@ function App() {
       </div>
     </div>
 
+    {/* Second Card */}
+    <div className="w-[800px] flex">
+    <div className="flex justify-between mb-4 rounded-r-full">
+    <div className="p-2 bg-blue-500 w-80 rounded-l-xl outline outline-blue-500">
+      <h1 className="text-4xl text-white p-5 w-100">{quotes[1].name}</h1>
+      <h2 className="text-xl text-gray-400 pl-4">{quotes[1].title}</h2>
+    </div>
+    <div className="flex items-center justify-center rounded-r-full outline outline-gray-500">
+      <h1 className="text-stone-950 text-xl text-justify text-left pl-5">
+        {quotes[1].bio}
+      </h1>
+    </div>
+    </div>
+    </div>
     
     </>
   )
